@@ -78,12 +78,13 @@ import avatar from '@/assets/logo.png'`
 meta: {
     keepAlive: true // 需要被缓存
 }
+
  <keep-alive>
     <router-view v-if="$route.meta.keepAlive"></router-view>
  </keep-alive>
 `
 
- 当引入keep-alive 的时候，页面第一次进入，钩子的触发顺序created-> mounted-> activated，退出时触发deactivated。当再次进入（前进或者后退）时，只触发activated。再次进入就不在重新解析而是读取内存中的数据
+    当引入keep-alive 的时候，页面第一次进入，钩子的触发顺序created-> mounted-> activated，退出时触发deactivated。当再次进入（前进或者后退）时，只触发activated。再次进入就不在重新解析而是读取内存中的数据
  
  #activated 激活
  
@@ -94,9 +95,7 @@ meta: {
  #deactivated 失活
  
  `
- deactivated: function () {
-      
-  }
+ deactivated: function () {}
  `
  
 参考文献:
