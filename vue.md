@@ -50,5 +50,5 @@ build出来的index.html文件中的默认资源引用都是绝对路径，也�
  
  如何引入静态资源得图片且不会编译？？
  
- /*<img src="static/images/nodata-icon.png">*/ //html标签，他的路径是由index.html开始访问的
+ `<img src="static/images/nodata-icon.png">` //html标签，他的路径是由index.html开始访问的
  background:url('/static/images/nodata-icon.png') no-repeat; // 这个必须用绝对路径
