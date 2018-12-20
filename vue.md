@@ -52,3 +52,8 @@ build出来的index.html文件中的默认资源引用都是绝对路径，也�
  
  `<img src="static/images/nodata-icon.png">` //html标签，他的路径是由index.html开始访问的
 ` background:url('/static/images/nodata-icon.png') no-repeat;` // 这个必须用绝对路径
+
+图片在vue中引入 路径报错??
+
+`<img :src="avatar"/>
+import avatar from '@/assets/logo.png'`
