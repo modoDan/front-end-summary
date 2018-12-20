@@ -57,3 +57,36 @@ build出来的index.html文件中的默认资源引用都是绝对路径，也�
 
 `<img :src="avatar"/>
 import avatar from '@/assets/logo.png'`
+
+4、keep-alive用法以及activated,deactivated生命周期的讲解
+#keep-alive
+把所有的页面都基于缓存了不用发起第二次请求，
+1).include和exclude表示那些组件需要缓存那些组件不需要缓存
+`
+<keep-alive :include="tagsList">
+    <router-view></router-view>
+</keep-alive>
+`
+2).router文件中设置
+`
+meta: {
+    keepAlive: true // 需要被缓存
+}
+ <keep-alive>
+    <router-view v-if="$route.meta.keepAlive"></router-view>
+ </keep-alive>
+    `
+ 当引入keep-alive 的时候，页面第一次进入，钩子的触发顺序created-> mounted-> activated，退出时触发deactivated。当再次进入（前进或者后退）时，只触发activated。再次进入就不在重新解析而是读取内存中的数据
+ #activated 激活
+ `activated: function () {
+     // 获取数据
+  }`
+ #deactivated 失活
+ `
+ deactivated: function () {
+      
+  }`
+  参考文献:https://blog.csdn.net/qq_32786873/article/details/71171713
+  cloud.tencent.com/developer/chapter/18052
+    
+
