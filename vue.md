@@ -56,5 +56,4 @@ build出来的index.html文件中的默认资源引用都是绝对路径，也�
 图片在vue中引入 路径报错??
 
 `<img :src="avatar"/>
-
 import avatar from '@/assets/logo.png'`
