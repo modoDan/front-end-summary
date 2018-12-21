@@ -109,7 +109,7 @@ meta: {
 
 `computed: {`
 
-    ` ...mapState({
+     ...mapState({
         loginInfo: 'loginInfo',
         circle: state => state.loginStatus,
         countAlias: 'loginStatus',
@@ -122,6 +122,6 @@ meta: {
         'loginInfo',
         'loginStatus',
     ])
-    `
+    
   `},
   `
