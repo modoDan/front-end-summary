@@ -101,4 +101,22 @@ meta: {
 参考文献:
     https://blog.csdn.net/qq_32786873/article/details/71171713  https://blog.csdn.net/buddha_itxiong/article/details/81069087
     
+5、vuex中state的mapState 辅助函数用法
 
+当一个组件需要获取多个状态时候，将这些状态都声明为计算属性会有些重复和冗余。为了解决这个问题，我们可以使用 mapState 辅助函数帮助我们生成计算属性
+
+`import { mapState } from 'vuex'
+computed: {
+     ...mapState({
+        loginInfo: 'loginInfo',
+        circle: state => state.loginStatus,
+        countAlias: 'loginStatus',
+        countPlusLocalState (state) {
+            return state.loginStatus + this.title
+        }
+    }),
+    ...mapState([
+        'loginInfo',
+        'loginStatus',
+    ])
+  },`
