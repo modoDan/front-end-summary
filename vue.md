@@ -108,7 +108,6 @@ meta: {
 `import { mapState } from 'vuex'
 
 computed: {
-
      ...mapState({
         loginInfo: 'loginInfo',
         circle: state => state.loginStatus,
@@ -122,5 +121,4 @@ computed: {
         'loginInfo',
         'loginStatus',
     ])
-    
   },`
