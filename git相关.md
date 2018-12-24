@@ -14,3 +14,11 @@
   git status
   
   git push origin master
+  
+  2、"npm ERR! Error: EPERM: operation not permitted"问题解决
+  
+  重点是：operation not permitted  想到应该是windows系统下的权限错误。
+  
+  解决方法：   使用win+x,选择命令提示符（管理员），在里面运行命令就好了。
+  
+  https://blog.csdn.net/fjnjxr/article/details/53158204
