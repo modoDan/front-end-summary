@@ -1,6 +1,6 @@
 1、JS 引擎的执行机制event loop 和理解macro-task micro-task
 
-##  event loop(1)
+**event loop(1)**
 
 按照这种分类方式:JS的执行机制是：
 
@@ -12,7 +12,7 @@
 
 以上三步循环执行，这就是event loop。
 
-##  event loop(2)
+**event loop(2)**
 
 macro-task(宏任务)：包括整体代码script，setTimeout，setInterval
 
