@@ -125,5 +125,7 @@ meta: {
     
   `},
   `
+  
   6、移动端怎么预览图片放大缩小之 vue2-preview
+  
   https://juejin.im/post/5bf37d93f265da61671fecb8
