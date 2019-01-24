@@ -1,5 +1,6 @@
-1、 前端获取不到后端设置的cookie之cookie.httpOnly
+# 1、 前端获取不到后端设置的cookie之cookie.httpOnly
+
 Q：cookie服务端存在，浏览器cookie确实存在,但客户端不能通过js取到
 A：可以让后台把httpOnly改为false
 目的：将cookie设置成HttpOnly是为了防止XSS攻击，窃取cookie内容，这样就增加了cookie的安全性
-参考文献：https://blog.csdn.net/shidaping/article/details/72235996
+参考文献：`https://blog.csdn.net/shidaping/article/details/72235996`
