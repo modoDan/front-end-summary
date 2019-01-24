@@ -125,13 +125,15 @@ meta: {
     
   `},
   `
-  # 关于mapState，mapGetters,mapMutations,mapActions的学习笔记
+  
+  !! 关于mapState，mapGetters,mapMutations,mapActions的学习笔记
   
   mapState，mapGetters 用在computed中
   
   mapMutations，mapActions是写在methods里面，因为他触发的是方法
   
   参考文献：https://blog.csdn.net/Little_Pig_Bug/article/details/82383652
+  
   6、移动端怎么预览图片放大缩小之 vue2-preview
   
   https://juejin.im/post/5bf37d93f265da61671fecb8
