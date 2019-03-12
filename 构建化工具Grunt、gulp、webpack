@@ -1,0 +1,58 @@
+### Grunt 
+1.首先全局安装
+npm install -g grunt-cli 
+2.安装grunt
+npm install grunt --save-dev
+3.Gruntfile.js文件配置
+``
+module.exports = function(grunt){
+	// 1.初始化插件配置
+	grunt.initConfig({
+		//主要编码处
+	});
+	// 2.加载插件任务
+	grunt.loadNpmTasks('插件名');
+	// 3.注册构建任务
+	grunt.registerTask('default',['插件名']);
+}
+``
+### Gulp 
+ 1.全局安装gulp  ： npm install gulp -g
+ 2.局部安装gulp： npm install gulp --save-dev
+ 3.配置编码: gulpfile.js
+ //1.引入gulp模块
+var gulp = require('gulp');
+//2.定义默认任务
+gulp.task('任务名',function(){});
+//3.异步执行
+gulp.task('default',gulp.parallel('任务名')) ;
+### webpack 
+使用webpack配置文件
+    * 创建webpack.config.js
+        ```
+        const path = require('path'); //path内置的模块，用来设置路径。
+        module.exports = {
+          entry: './src/js/entry.js',   // 入口文件
+          output: {                     // 输出配置
+            filename: 'bundle.js',      // 输出文件名
+            path: path.resolve(__dirname, 'dist')   //输出文件路径配置
+          },
+          module: {
+            //loader配置
+            //如处理JS的babel和处理css的postCss
+            //postcss-loader，css会自动根据Can i use里的数据添加不同前缀
+          },
+          plugins: [
+            //插件配置
+          ],
+          //自动编译打包,利用webpack开发服务器工具: webpack-dev-server
+          devServer: {
+              contentBase: './dist',
+          },
+        };
+        ```
+        注意：如有报错，请注意版本升级问题webpack3x升级为webpack4x，用法不支持
+参考文献：
+1、https://my.oschina.net/mdxlcj/blog/1626534
+2、https://my.oschina.net/mdxlcj/blog/1802438
+3、https://segmentfault.com/a/1190000006178770
