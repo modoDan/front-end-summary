@@ -4,7 +4,7 @@ npm install -g grunt-cli
 2.安装grunt
 npm install grunt --save-dev
 3.Gruntfile.js文件配置
-```module.exports = function(grunt){
+```	module.exports = function(grunt){
 	// 1.初始化插件配置
 	grunt.initConfig({
 		//主要编码处
