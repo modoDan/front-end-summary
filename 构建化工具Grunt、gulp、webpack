@@ -1,3 +1,8 @@
+区别
+Grunt和Gulp属于任务流/自动化构建工具Tast Runner , 而 webpack属于模块打包工具 Bundler。
+gulp和grunt是流管理工具，通过一个个task配置执行用户需要的功能，如格式检验，代码压缩等，经过这两者处理的代码只是局部变量名被替换简化，整体并没有发生改变，还是你的代码。
+而webpack则进行了更彻底的打包处理，更加偏向对模块语法规则进行转换。主要任务是突破浏览器的鸿沟，将原本浏览器不能识别的规范和各种各样的静态文件进行分析，压缩，合并，打包，最后生成浏览器支持的代码，
+因此，webapck打包过后的代码已经不是你写的代码了，或许你再去看，已经看不懂啦
 ##Grunt
 1.首先全局安装
 npm install -g grunt-cli 
@@ -36,7 +41,7 @@ gulp.task('default',gulp.parallel('任务名')) ;
             path: path.resolve(__dirname, 'dist')   //输出文件路径配置
           },
           module: {
-            //loader配置
+	    //加载器配置（需要加载器转化的模块类型），loader配置
             //如处理JS的babel和处理css的postCss
             //postcss-loader，css会自动根据Can i use里的数据添加不同前缀
           },
