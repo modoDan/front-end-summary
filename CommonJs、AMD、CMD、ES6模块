@@ -31,3 +31,6 @@ CommonJs 同步模块加载
    export XXX
  *使用模块
    import
+参考文献：
+1：https://www.jianshu.com/p/67ce52c93392
+2：https://www.jianshu.com/p/09b7c581ab08
