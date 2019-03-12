@@ -1,11 +1,10 @@
-### Grunt 
+##Grunt
 1.首先全局安装
 npm install -g grunt-cli 
 2.安装grunt
 npm install grunt --save-dev
 3.Gruntfile.js文件配置
-``
-module.exports = function(grunt){
+```module.exports = function(grunt){
 	// 1.初始化插件配置
 	grunt.initConfig({
 		//主要编码处
@@ -14,8 +13,7 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('插件名');
 	// 3.注册构建任务
 	grunt.registerTask('default',['插件名']);
-}
-``
+}```
 ### Gulp 
  1.全局安装gulp  ： npm install gulp -g
  2.局部安装gulp： npm install gulp --save-dev
