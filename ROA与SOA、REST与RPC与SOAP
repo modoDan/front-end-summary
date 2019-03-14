@@ -1,0 +1,20 @@
+## 架构风格：
+ROA 面向资源的体系结构 如REST
+    优点：设计灵活，以及轻量级方法、快速运行，具有良好的性能和低开销
+SOA 面向服务的体系结构 如SOAP、RPC
+    优点：更成熟的工具支持、XML请求的类型安全性
+    
+## 实例：
+REST 表述性状态转移
+    相当于明信片，名词
+    特点：统一接口、资源、无状态、超文本、连通性、可寻址
+    只能用HTTP请求
+SOAP 简单对象访问协议 （web服务）
+    相当于拆开信封，动词
+
+RPC 远程过程调用
+    基于XML-RPC协议，可以用HTTP/TCP协议，只能用服务器本身提供的接口与方法与服务器交互，整个过程客户端不可见
+参考文献：
+1、http://rest.elkstein.org/2008/02/roa-vs-soa-rest-vs-soap.html
+2、https://www.ctolib.com/topics-129370.html
+3、https://infoq.cn/article/understanding-restful-style
