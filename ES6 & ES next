@@ -1,0 +1,10 @@
+# ES7的特性  #
+  . includes()  arr.includes(x)
+  . 指数操作符
+# ES8的特性  #
+  . async/await
+  . Object.values()
+  . Object.entries()
+  . String padding
+  . 函数参数列表结尾允许逗号
+  . Object.getOwnPropertyDescriptors()
