@@ -25,16 +25,19 @@
   https://blog.csdn.net/fjnjxr/article/details/53158204
 
 3、项目中常用git命令
-$ git fetch  //拉取远程的分支
-$ git branch -a   //查看本地和远程的分支
-$ git checkout xxx   //切换到分支xxx
-$ git pull //更新远程主机某个分支
-$ git merge yyy //本地xxx分支合并到yyy分支上
+- $ git fetch  //拉取远程的分支
+- $ git branch -a   //查看本地和远程的分支
+- $ git checkout xxx   //切换到分支xxx
+- $ git pull //更新远程主机某个分支
+- $ git merge yyy //本地xxx分支合并到yyy分支上
 
-$ git status //查看本地自己修改了多少文件
-$ git add . //添加远程不存在的git文件
-$ git commit  -m "what I want told to someone" //提交修改，引号内容为描述
-$ git push  //更新到远程服务器上
-
+- $ git status //查看本地自己修改了多少文件
+- $ git add . //添加远程不存在的git文件
+- $ git commit  -m "what I want told to someone" //提交修改，引号内容为描述
+- $ git push  //更新到远程服务器上
+- $ git log //查看版本库的状态，提交id--commitId
+- $ git reset --hard commitId //commitId提交id
+- $ git reset --hard HEAD^ // HEAD表示当前版本
+- $ git push -f -u origin xxx //强制提交到xxx分支
 参考文献：
 http://www.ruanyifeng.com/blog/2014/06/git_remote.html
