@@ -1,0 +1,12 @@
+## 1.处理浏览器API兼容
+一般写在webpack配置文件的入口文件
+垫片polyfill:
+主要是抚平不同浏览器之间对js实现的差异，把差异化抚平，不支持的变得支持了
+例如：IE低浏览器版本对部分ES6语法不支持，使用垫片，浏览器会去找能支持的替代物
+插件：babel-polyfill
+
+## 2.commonsChunkPlugin
+用来提取公共代码，通过将公共模块提取出来，只在页面加载的时候引入一次，提升应用的加载效率
+new webpack.optimize.commonsChunkPlugin({
+...配置项
+})
