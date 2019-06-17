@@ -22,3 +22,26 @@ iframe框架结构有时会让人感到迷惑，如果框架个数多的话，�
 代码复杂，无法被一些搜索引擎索引到，这一点很关键，现在的搜索引擎爬虫还不能很好的处理iframe中的内容，所以使用iframe会不利于搜索引擎优化（SEO）。
 很多的移动设备无法完全显示框架，设备兼容性差。
 iframe框架页面会增加服务器的http请求，对于大型网站是不可取的。
+
+4、css伪类
+1）.动态伪类：：hover   ：link   :visited   :active
+2）.状态伪类：:enabled,:disabled,:checked,:target
+3）.:nth选择器：
+    :first-child选择某个元素的第一个子元素；
+    :last-child选择某个元素的最后一个子元素；
+    :nth-child()选择某个元素的一个或多个特定的子元素；
+    :nth-child(2) 选择第二个  :nth-child(n) n从0开始0的时候取不到元素的，  :nth-child(2n)==:nth-child(even) 
+    :nth-child(n+5)  选取的5往后的子元素        :nth-child(-n+5)  选取的5往前的子元素       
+    :nth-last-child()选择某个元素的一个或多个特定的子元素，从这个元素的最后一个子元素开始算；
+    :nth-of-type()选择指定的元素；
+    :nth-last-of-type()选择指定的元素，从元素的最后一个开始计算；
+    :first-of-type选择一个上级元素下的第一个同类子元素；
+    :last-of-type选择一个上级元素的最后一个同类子元素；
+    :only-child选择的元素是它的父元素的唯一一个了元素；
+    :only-of-type选择一个元素是它的上级元素的唯一一个相同类型的子元素；
+    :empty选择的元素里面没有任何内容
+4）.否定选择器（:not）
+5）.伪元素：::first-letter,::first-line,::before,::after，::selection
+
+4、Ajax的基本原理
+Ajax的原理简单来说通过XmlHttpRequest对象来向服务器发送异步请求，从服务器获得数据，然后用javascript来操作DOM而更新页面
