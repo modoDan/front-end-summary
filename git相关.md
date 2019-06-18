@@ -39,5 +39,8 @@
 - $ git reset --hard commitId //commitId提交id
 - $ git reset --hard HEAD^ // HEAD表示当前版本
 - $ git push -f -u origin xxx //强制提交到xxx分支
+4、git后修改了本地文件，如何重新还原未修改状态
+  单个文件 ： git checkout + 文件名
+  整个目录 ：git checkout .(这个点要加上的)
 参考文献：
 http://www.ruanyifeng.com/blog/2014/06/git_remote.html
