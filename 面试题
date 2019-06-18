@@ -49,7 +49,7 @@ iframe框架页面会增加服务器的http请求，对于大型网站是不可�
 5）.伪元素：::first-letter,::first-line,::before,::after，::selection
 
 4、Ajax的基本原理
-Ajax的原理简单来说通过XmlHttpRequest对象来向服务器发送异步请求，从服务器获得数据，然后用javascript来操作DOM而更新页面
+Ajax的原理简单来说通过XmlHttpRequest对象来向服务器发送异步请求，从服务器获得数据，然后用javascript来操作DOM更新当前网页对应部分，而不用刷新整个网页
 
 5、websocket浏览器兼容性
 websocket不兼容IE浏览器，但是兼容Edge浏览器
