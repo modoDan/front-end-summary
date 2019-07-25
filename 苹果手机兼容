@@ -8,3 +8,14 @@
 <meta name="format-detection" content="telephone=no,email=no" />
 //不自动识别页面中的 电话和邮箱，就是点击数字或邮箱样的字符不会做其他操作；
 
+3、ios设备使用iframe宽度超出屏幕
+1、给iframe的外层div添加样式：overflow: auto;-webkit-overflow-scrolling:touch;width:100%;
+2、给iframe设置属性scrolling='no'
+3、给iframe设置样式：width: 1px; min-width: 100%; *width: 100%;
+```
+<div style="overflow: auto;-webkit-overflow-scrolling:touch;width:100%;">
+    <iframe height="100%" scrolling="no" style="width: 1px; min-width: 100%; *width: 100%;" src="https://juejin.im/timeline">
+    </iframe>
+</div>
+
+```
