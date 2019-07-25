@@ -37,6 +37,8 @@
 - $ git push  //更新到远程服务器上
 - $ git log //查看版本库的状态，提交id--commitId
 - $ git reset --hard commitId //commitId提交id
+- $ git reflog //查看在所有分支上做的全部改动，每个改动都有一个编号HEAD@{index}
+- $ git reset HEAD@{index}
 - $ git reset --hard HEAD^ // HEAD表示当前版本
 - $ git push -f -u origin xxx //强制提交到xxx分支
 4、git后修改了本地文件，如何重新还原未修改状态
